@@ -32,7 +32,7 @@ public class OpenAIChatGPTTest {
         try {
         	chatbot.complete(request);
         }catch(OpenAIGPTException e) {
-        	System.out.println(e.getMessage());
+        	assertNotNull(e);
         	throw e;
         }
         
